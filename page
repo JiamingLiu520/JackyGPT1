@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AI Super Intelligent Assistant</title>
+	<style>
+		body {
+			background-color: #000;
+			margin: 0;
+			padding: 0;
+			height: 100vh;
+			width: 100vw;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			max-width: 90vw;
+			height: 80vh;
+		}
+		.images {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			max-width: 100%;
+			height: 50%;
+		}
+		.image {
+			flex: 1;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 10px;
+			box-sizing: border-box;
+			position: relative; /* 添加相对定位 */
+		}
+		.image:hover::after { /* 添加鼠标悬停状态下的样式 */
+			content: attr(data-image-index); /* 显示序号 */
+			font-size: 2em;
+			font-weight: bold;
+			color: #fff;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: rgba(0, 0, 0, 0.5);
+			z-index: 1;
+		}
+		.image img {
+			max-width: 100%;
+			max-height: 100%;
+			object-fit: contain;
+		}
+		.description {
+			text-align: justify;
+			color: #fff;
+			font-size: 1.2em;
+			padding: 20px;
+			line-height: 1.5;
+			height: 50%;
+			overflow-y: auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		h1 {
+			font-size: 2em;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="images">
+			<div class="image" data-image-index="1"> <!-- 添加data-image-index序号属性 -->
+				<img src="https://cdn.discordapp.com/attachments/1032123521855402004/1088886507349229638/0xJM.ai_an_iOS_app_can_solve_anything_people_want_by_using_AI_b_131f6498-2235-449c-bbdd-769fe848f1c3.png" alt="AI Super Intelligent Assistant Image 1">
+			</div>
+			<div class="image" data-image-index="2">
+				<img src="https://cdn.discordapp.com/attachments/1032123521855402004/1088885160944078878/0xJM.ai_an_iOS_app_can_solve_anything_people_want_by_using_AI_b_0ccac060-945e-4b69-9a98-0ebbf57b71e8.png" alt="AI Super Intelligent Assistant Image 2">
+			</div>
+			<div class="image" data-image-index="3">
+				<img src="https://cdn.discordapp.com/attachments/1032123521855402004/1088885280091668480/0xJM.ai_an_iOS_app_can_solve_anything_people_want_by_using_AI_b_0dbf2f8d-ba28-4364-8729-6708947a760c.png" alt="AI Super Intelligent Assistant Image 3">
+			</div>
+			<div class="image" data-image-index="4">
+				<img src="https://cdn.discordapp.com/attachments/1032123521855402004/1088886346514448534/0xJM.ai_an_iOS_app_can_solve_anything_people_want_by_using_AI_b_18297133-8e59-4d48-b4a0-33edf4b206f9.png" alt="AI Super Intelligent Assistant Image 4">
+			</div>
+		</div>
+		<div class="description">
+			<h1>AI Super Intelligent Assistant</h1>
+			<p>This is a mobile app that can help you answer questions during your learning process. It uses artificial intelligence technology to provide accurate answers to various types of questions, including history, geography, science and more. Simply enter your question and AI Super Intelligent Assistant will give you the correct answer, as well as related learning resources and recommendations. With this app, you can learn more easily and quickly.</p>
+		</div>
+	</div>
+</body>
+</html>
